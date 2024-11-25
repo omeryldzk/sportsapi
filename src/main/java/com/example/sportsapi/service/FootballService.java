@@ -158,7 +158,7 @@ public class FootballService {
 
         String round = getRoundInfo(leagueId);  // Get the current round information
 
-        // Build the URI with query parameters
+        // Build the URI with query parameters // year can be changed
         String url = apiConfig.getBaseUrl() + "/fixtures?league=" + leagueId + "&season=2024&round=" + round;
 
         // Create headers

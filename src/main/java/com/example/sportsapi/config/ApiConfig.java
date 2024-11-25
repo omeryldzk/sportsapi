@@ -18,6 +18,7 @@ public class ApiConfig {
     @Value("${api.sports.key}")
     private String apiKey;
 
+    // leagueIds from documentation
     List<Integer> leagueIds = Arrays.asList(2, 3, 39, 45, 61, 78, 88, 94, 135, 140, 145, 203);
 
     public String getBaseUrl() {
