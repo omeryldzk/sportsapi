@@ -182,7 +182,7 @@ public class FootballService {
 
             Map<String, Object> league_info = new HashMap<>();
 
-            league_info.put("League Name", leagueName);                // Extract the time
+            league_info.put("League Name", leagueName);
             league_info.put("League Logo", leagueLogo);
             league_info.put("League Season", leagueSeason);
 
