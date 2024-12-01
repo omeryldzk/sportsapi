@@ -3,6 +3,7 @@ name: Build || Push || Deploy Cloud
 on:
   push:
     branches: [ "deploy" ]
+    # Build and push image to Google Container Registry
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
