@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "api.sports",
+      "type": "com.example.sportsapi.config.ApiConfig",
+      "sourceType": "com.example.sportsapi.config.ApiConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "api.sports.league-ids",
+      "type": "java.util.List<java.lang.Integer>",
+      "sourceType": "com.example.sportsapi.config.ApiConfig"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,6 @@
+META-INF/spring-configuration-metadata.json
+com/example/sportsapi/config/ApiConfig.class
+com/example/sportsapi/controller/FootballController.class
+com/example/sportsapi/config/AppConfig.class
+com/example/sportsapi/SportsapiApplication.class
+com/example/sportsapi/service/FootballService.class
