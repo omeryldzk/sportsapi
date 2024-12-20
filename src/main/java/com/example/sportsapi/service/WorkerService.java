@@ -22,7 +22,7 @@ public class WorkerService {
     private final FootballService footballService;
     private final ApiConfig apiConfig;
 
-    // Constructor-based injection
+    // Constructor-based injection for the WorkerService class
     @Autowired
     public WorkerService(FootballService footballService, ApiConfig apiConfig) {
         this.storage = StorageOptions.getDefaultInstance().getService();
