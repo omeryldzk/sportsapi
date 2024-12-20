@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
+@Configuration
 @ConfigurationProperties(prefix = "api.sports")
 public class ApiConfig {
     @Value("${api.sports.base-url}")
@@ -17,6 +17,10 @@ public class ApiConfig {
 
     @Value("${api.sports.key}")
     private String apiKey;
+
+    @Value("${spring.gcs.bucket.name}")
+    private String bucketName;
+
 
     // leagueIds from documentation
     List<Integer> leagueIds = Arrays.asList(2, 3, 39, 45, 61, 78, 88, 94, 135, 140, 145, 203);
@@ -29,7 +33,9 @@ public class ApiConfig {
         return leagueIds;
     }
 
-
+    public String getBucketName() {
+        return bucketName;
+    }
     public String getApiKey() {
         return apiKey;
     }

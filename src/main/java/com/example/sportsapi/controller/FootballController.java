@@ -27,7 +27,6 @@ public class FootballController {
 
         // Fetch the league data
         List<Map<String, Object>> leagueInfo = footballService.getLeaguesInfo(leagueIds);
-
         return ResponseEntity.ok(leagueInfo);
     }
     @GetMapping("/standings/{leagueId}")
